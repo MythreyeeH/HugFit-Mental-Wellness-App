@@ -1,0 +1,59 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "mental-wellness-app-288c1",
+          "appId": "1:1060346299174:android:391d10bf003ed12d96f7e7",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mental-wellness-app-288c1",
+          "configurations": {
+            "android": "1:1060346299174:android:391d10bf003ed12d96f7e7",
+            "ios": "1:1060346299174:ios:dc8b648a95464cc396f7e7",
+            "macos": "1:1060346299174:ios:dc8b648a95464cc396f7e7",
+            "web": "1:1060346299174:web:7c257503a6b8e87596f7e7",
+            "windows": "1:1060346299174:web:4666ef810ee3f97996f7e7"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "asia-south1",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "venv",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "runtime": "python313"
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
